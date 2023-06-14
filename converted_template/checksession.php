@@ -21,8 +21,8 @@ return true;
     if ($_SESSION['loggedin'] == 1)
        return TRUE;
     else {
-       $_SESSION['URI'] = 'http://localhost'.$_SERVER['REQUEST_URI']; //save current url for redirect     
-       header('Location: http://localhost/bnb/login.php', true, 303);       
+       $_SESSION['URI'] = 'https://a608.herokuapp.com/'.$_SERVER['REQUEST_URI']; //save current url for redirect     
+       header('Location: https://a608.herokuapp.com/login.php', true, 303);       
     }       
 }
 
@@ -41,7 +41,7 @@ function login($id,$username) {
    if ($_SESSION['loggedin'] == 0 and !empty($_SESSION['URI']))        
         $uri = $_SESSION['URI'];          
    else { 
-     $_SESSION['URI'] =  'http://localhost/bnb/listcustomers.php';         
+     $_SESSION['URI'] =  'https://a608.herokuapp.com/listcustomers.php';         
      $uri = $_SESSION['URI'];           
    }  
 
@@ -58,6 +58,6 @@ function logout(){
   $_SESSION['userid'] = -1;        
   $_SESSION['username'] = '';
   $_SESSION['URI'] = '';
-  header('Location: http://localhost/bnb/login.php', true, 303);    
+  header('Location: https://a608.herokuapp.com/login.php', true, 303);    
 }
 ?>
