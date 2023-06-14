@@ -1,7 +1,7 @@
 <?php
 // MySQL credentials
-define("DBHOST","localhost");
-define("DBUSER","root");
-define("DBPASSWORD","root");
-define("DBDATABASE","motueka");
+define("DBHOST","sql9.freesqldatabase.com");
+define("DBUSER","sql9625985");
+define("DBPASSWORD","Ee2Tc6SJ2N");
+define("DBDATABASE","sql9625985");
 ?>
